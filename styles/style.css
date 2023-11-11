@@ -1,1 +1,42 @@
-/* место для вашего кода */
+@import url(./global.css);
+
+.body__section {
+    width: 1440px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 92px 49px 92px 51px;
+}
+
+.header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__logo {
+    width: 148px;
+    height: 105px;
+}
+
+.main__menu__ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.main__menu__ul li {
+    display: flex;
+}
+
+
+
+.cover {
+    height: 757px;
+    background-color: brown;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
