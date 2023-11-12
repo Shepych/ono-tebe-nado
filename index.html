@@ -35,7 +35,7 @@
 
       <main>
         <section class="cover">
-          <div class="cover__darkside"></div>
+          <div class="darkside"></div>
           <div class="cover__content">
             <div class="cover__title">
               <span class="cover__title__left">ОН О</span>
@@ -56,19 +56,28 @@
           <h2 class="lots__title">Лоты</h2>
 
           <div class="cards__list">
-            <div class="card">
-              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
-              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            <div class="card lot__first">
+              <div class="darkside"></div>
+              <div class="card__content">
+                <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </div>
             </div>
 
-            <div class="card">
-              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
-              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            <div class="card lot__second">
+              <div class="darkside"></div>
+              <div class="card__content">
+                <a class="card__title" href="#">Книга, где описан один скучный день из жизни рекламного агента</a>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </div>
             </div>
 
-            <div class="card">
-              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
-              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            <div class="card lot__third">
+              <div class="darkside"></div>
+              <div class="card__content">
+                <a class="card__title" href="#">Картина, которую повторит даже 5-летний сын маминой подруги</a>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </div>
             </div>
           </div>
 
@@ -89,7 +98,29 @@
         </section>
       </main>
 
-      <footer>Футер</footer>
+      <footer class="footer">
+        <div class="contacts contacts__footer">
+          <ul class="contacts__list">
+            <li><a href="#">+9 999 555 5555</a></li>
+            <li><a href="#">info@sobaka.ge</a></li>
+            <li class="address">наб. Принсенграхт 263-265, <br>Амстердам</li>
+          </ul>
+        </div>
+
+        <nav class="main__menu">
+          <ul class="main__menu__list main__menu__list__footer">
+            <li>главная</li>
+            <li><a href="#">просмотреть лоты</a></li>
+            <li><a href="#">об аукционе</a></li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <img src="./images/yt.svg" width="100px">
+          <img src="./images/vk.svg">
+          <img src="./images/pinterest.svg">
+        </div>
+      </footer>
     </section>
   </body>
 </html>
