@@ -12,23 +12,81 @@
       <header class="header">
         <section class="header__section">
           <nav class="main__menu">
-            <ul class="main__menu__ul">
+            <ul class="main__menu__list">
               <li>главная</li>
-              <li><a href="#">просмотреть лоты</a> <img width="7px" src="./images/circle.svg"></li>
-              <li><a href="#">об аукционе</a> <img width="7px" src="./images/circle.svg"></li>
+              <li><img class="list__maker" src="./images/circle.svg"></li>
+              <li><a href="#">просмотреть лоты</a></li>
+              <li><img class="list__maker" src="./images/circle.svg"></li>
+              <li><a href="#">об аукционе</a></li>
             </ul>
           </nav>
   
           <img class="header__logo" src="./images/logo-black.svg" alt="Логотип">
   
-          <div class="address">
-            Адрес
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li><a href="#">+9 999 555 5555</a></li>
+              <li><a href="#">info@sobaka.ge</a></li>
+              <li class="address">наб. Принсенграхт 263-265, <br>Амстердам</li>
+            </ul>
           </div>
         </section>
       </header>
 
       <main>
-        <section class="cover"></section>
+        <section class="cover">
+          <div class="cover__darkside"></div>
+          <div class="cover__content">
+            <div class="cover__title">
+              <span class="cover__title__left">ОН О</span>
+              <span class="cover__title__center">ТЕБ Е</span>
+              <span class="cover__title__right">Н АДО</span>
+            </div>
+
+            <div class="cover__footer">
+              <span class="cover__footer__text">Аукцион&nbsp;вещей,&nbsp;в&nbsp;которые&nbsp;никто&nbsp;не&nbsp;верил</span>
+              <div class="cover__bet__button">
+                Сделать ставку
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lots">
+          <h2 class="lots__title">Лоты</h2>
+
+          <div class="cards__list">
+            <div class="card">
+              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </div>
+
+            <div class="card">
+              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </div>
+
+            <div class="card">
+              <a class="card__title" href="#">Фильм режиссёра, который  бросил киношколу</a>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </div>
+          </div>
+
+          <span class="see__more">посмотреть больше</span>
+        </section>
+
+        <section class="about__auction">
+          <div class="logo__wrapper">
+            <img class="logo__white" src="./images/logo-white.svg">
+          </div>
+          <h2 class="about__title">Об Аукционе</h2>
+          <p class="about__text__first">
+            Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          </p>
+          <p class="about__text__second">
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
+          </p>
+        </section>
       </main>
 
       <footer>Футер</footer>
