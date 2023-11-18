@@ -1,20 +1,13 @@
-@import url(../fonts/fonts.css);
-@import url(./global.css);
-
-.body__section {
+.header, .main, .footer {
     width: 1440px;
     margin: 0 auto;
 }
 
 .header {
     padding: 92px 49px 92px 51px;
-}
-
-.header__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .header__logo {
@@ -30,36 +23,46 @@
 
 .main__menu__list {
     display: flex;
-    list-style-type: none;
+    list-style-type: circle;
+    gap: 32px;
 }
 
 .main__menu__list li {
-    display: flex;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.main__menu__list li a {
+.main__menu__list li:nth-child(1) {
+    list-style-type: none;
+}
+
+.menu__link {
     text-decoration: none;
     border-bottom: 1px solid #000;
 }
 
-.list__maker {
-    margin-left: 13px;
-    margin-right: 12px;
+.active__link {
+    border-bottom: none;
 }
 
-.contacts {
+.header__right__section {
     flex: 1 1 0px;
     display: flex;
     justify-content: end;
-    align-items: end;
+}
+
+.contacts {
+    width: 240px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
     list-style-type: none;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -109,32 +112,31 @@
 .cover__title span {
     font-size: 100px;
     color: white;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 30px;
 }
 
 .cover__title__left {
-    height: 115px;
-    line-height: 115%; 
+    line-height: 115px; 
 }
 
 .cover__title__center {
     margin-right: 60px;
     align-self: center;
-    height: 100px;
+    line-height: 100px;
 }
 
 .cover__title__right {
     align-self: end;
-    height: 100px;
+    line-height: 100px;
 }
 
 .cover__footer {
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -164,7 +166,6 @@
 /* Сетка ОБ АУКЦИОНЕ */
 .about__auction {
     width: 1340px;
-    height: 487px;
     display: grid;
     grid-template-columns: 430px 885px;
     margin: 181px 50px 180px 50px;
@@ -224,7 +225,7 @@
     margin-bottom: 27px;
     display: block;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -240,7 +241,7 @@
 
 .card {
     color: #FFF;
-    height: 450px;
+    min-height: 450px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -248,7 +249,7 @@
 }
 
 .card__title {
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -269,7 +270,7 @@
 
 .card__text {
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -291,7 +292,7 @@
 .see__more {
     display: block;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -303,7 +304,6 @@
 }
 
 .footer {
-    margin:0 50px;
     margin-bottom: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

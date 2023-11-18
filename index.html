@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
+
   </head>
   <body>
-    <section class="body__section">
       <header class="header">
-        <section class="header__section">
           <nav class="main__menu">
             <ul class="main__menu__list">
-              <li>главная</li>
-              <li><img class="list__maker" src="./images/circle.svg"></li>
-              <li><a href="#">просмотреть лоты</a></li>
-              <li><img class="list__maker" src="./images/circle.svg"></li>
-              <li><a href="#">об аукционе</a></li>
+              <li><a href="#" class="menu__link active__link">главная</a></li>
+              <li><a href="#" class="menu__link">просмотреть лоты</a></li>
+              <li><a href="#" class="menu__link">об аукционе</a></li>
             </ul>
           </nav>
   
-          <img class="header__logo" src="./images/logo-black.svg" alt="Логотип">
-  
-          <div class="contacts">
-            <ul class="contacts__list">
-              <li><a href="#">+9 999 555 5555</a></li>
-              <li><a href="#">info@sobaka.ge</a></li>
-              <li class="address">наб. Принсенграхт 263-265, <br>Амстердам</li>
-            </ul>
+          <a href="#">
+            <img class="header__logo" src="./images/logo-black.svg" alt="Логотип">
+          </a>
+
+          <div class="header__right__section">
+            <address class="contacts">
+              <a href="#">+9 999 555 5555</a>
+              <a href="#">info@sobaka.ge</a>
+              <p class="address">наб. Принсенграхт 263-265, <br>Амстердам</p>
+            </address>
           </div>
-        </section>
       </header>
 
-      <main>
+      <main class="main">
         <section class="cover">
           <div class="darkside"></div>
           <div class="cover__content">
@@ -121,6 +121,5 @@
           <img src="./images/pinterest.svg">
         </div>
       </footer>
-    </section>
   </body>
 </html>
