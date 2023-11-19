@@ -14,7 +14,6 @@
     width: 148px;
     height: 105px;
     flex: 1 1 0px;
-    margin-bottom: 4px;
 }
 
 .main__menu {
@@ -107,6 +106,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-transform: uppercase;
 }
 
 .cover__title span {
@@ -131,6 +131,8 @@
 .cover__title__right {
     align-self: end;
     line-height: 100px;
+    position: relative;
+    left: 28px;
 }
 
 .cover__footer {
@@ -152,14 +154,50 @@
 .cover__footer__text {
     grid-column-start: 2;
     align-self: center;
-    word-spacing: 18px;
+    word-spacing: 17px;
+    margin-left: 33px;
 }
 
 .cover__bet__button {
+    width: 257px;
+    height: 52px;
+    background: none;
     border: 1px solid #FFF;
-    padding: 12px 32px;
     justify-self: end;
     grid-column-start: 3;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.cover__title__one__letter__space {
+    position: relative;
+    left:-24px;
+}
+
+.cover__title__two__letter__space {
+    position: relative;
+    left: 25px;
+}
+
+.cover__subtitle__letter__space {
+    position: relative;
+    left:3px;
+}
+
+.cover__title__three__letter__space {
+    position: relative;
+    left: 2px;
+}
+
+.cover__title__four__letter__space {
+    position: relative;
+    left: 22px;
 }
 
 
@@ -197,15 +235,17 @@
     justify-self: start;
     text-transform: uppercase;
     font-size: 40px;
+    margin-top: 7px;
 }
 
-.about__text__first {
+.about__text:nth-child(1n) {
     grid-row-start: 2;
     grid-column-start: 2;
     font-size: 20px;
+    margin-top: 9px;
 }
 
-.about__text__second {
+.about__text:nth-child(2n) {
     margin-top: 25px;
     grid-row-start: 3;
     grid-column-start: 2;
@@ -253,7 +293,6 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%;
     text-decoration-line: underline;
     text-transform: uppercase;
 }
@@ -277,15 +316,15 @@
     line-height: 120%;
 }
 
-.lot__first {
+.card_type_film {
     background-image: url(../images/card-lot-01.jpg);
 }
 
-.lot__second {
+.card_type_book {
     background-image: url(../images/card-lot-02.jpg);
 }
 
-.lot__third {
+.card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -301,12 +340,15 @@
     margin-top: 30px;
     border-bottom: 1px solid #000;
     align-self: start;
+    text-decoration: none;
 }
 
 .footer {
     margin-bottom: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .contacts__footer {
@@ -321,10 +363,27 @@
     justify-self: end;
 }
 
+.social__image {
+    width: 48px;
+    height: 48px;
+}
+
+.icon__youtube {
+    position: relative;
+    left: 4px
+}
+
 .main__menu__list__footer {
     flex-direction: column;
 }
 
 .main__menu__list__footer li {
     justify-content: center;
+}
+
+.footer .main__menu__list {
+    gap: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
 }
