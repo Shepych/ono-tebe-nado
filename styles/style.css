@@ -244,14 +244,12 @@
 }
 
 .about__text:nth-child(1n) {
-    grid-row-start: 2;
     grid-column-start: 2;
     margin-top: 9px;
 }
 
 .about__text:nth-child(2n) {
     margin-top: 28px;
-    grid-row-start: 3;
     grid-column-start: 2;
 }
 
