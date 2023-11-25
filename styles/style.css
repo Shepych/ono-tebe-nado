@@ -211,7 +211,7 @@
     width: 1340px;
     display: grid;
     grid-template-columns: 430px 885px;
-    margin: 181px 60px 162px 50px;
+    margin: 181px 60px 182px 50px;
     column-gap: 25px;
 }
 
@@ -249,6 +249,10 @@
     grid-column-start: 2;
     margin-bottom: 20px;
     margin-top: 9px;
+}
+
+.about__text:last-child {
+    margin-bottom: 0;
 }
 
 .lots {
